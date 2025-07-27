@@ -4,7 +4,7 @@ import heroImage from "../assets/hero.png";
 function Hero() {
   return (
     <section className="w-full flex flex-col justify-center items-center relative ">
-      <div className="absolute inset-0 w-[80%] mx-auto my-[150px]">
+      <div className="absolute inset-0 w-[90%] mx-auto my-[100px]">
         <h1 className="font-Montserrat text-rich-black-700 font-bold text-[2.375rem] leading-[120%] tracking-[-3%] mb-[12px]">
           Expert Insights on Finance,
           <br /> Accounting and Beyond

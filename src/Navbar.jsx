@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 function Navbar() {
   return (
     <header className="bg-rich-black-700">
-      <nav className="flex justify-between items-center w-[80%] mx-auto ">
+      <nav className="flex justify-between items-center w-[90%] mx-auto ">
         <h1 className="text-[1rem] leading-[120%] space-[3%] font-Montserrat text-rich-black-50">
           FINANCE
           <br />

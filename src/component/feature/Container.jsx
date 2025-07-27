@@ -7,7 +7,7 @@ import cardImage4 from "../../assets/card4.png";
 
 function Container() {
   return (
-    <div className="w-[80%] mx-auto  py-[90px]">
+    <div className="w-[90%] mx-auto  py-[90px]">
       <h2 className="font-Montserrat font-bold text-[1.875rem] leading-[120%] tracking-[-3%] text-rich-black-700 mb-[40px]">
         Feactured Posts
       </h2>

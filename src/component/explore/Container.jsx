@@ -12,7 +12,7 @@ import cardImage8 from "../../assets/accounting.png";
 function Container() {
   return (
     <div className="bg-rich-black-50  py-[64px]">
-      <div className="w-[80%] mx-auto">
+      <div className="w-[90%] mx-auto">
         <h2 className="font-Montserrat font-bold text-[1.875rem] leading-[120%] tracking-[-3%] text-rich-black-700 mb-[38px]">
           Explore By Topics
         </h2>
