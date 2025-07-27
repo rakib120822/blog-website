@@ -1,11 +1,14 @@
 import React from "react";
 import Hero from "./Hero";
-import Container from "./feature/Container";
+import Feature from "./feature/Container";
+import Explore from "./explore/Container";
 
 function Home() {
   return (
     <>
-      <Container />
+      {/* <Hero />
+      <Feature /> */}
+      <Explore />
     </>
   );
 }

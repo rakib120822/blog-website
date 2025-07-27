@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 function Card({ cardImage }) {
   return (
-    <div className="border border-rich-black-50 rounded-3xl h-[389px] w-[303px] p-[12px]">
+    <div className="border border-rich-black-50 rounded-3xl   p-[12px]">
       <img src={cardImage} alt="photo" className="mb-[20px]" />
       <h3 className="font-Montserrat font-light text-[0.75rem] leading-[120%] tracking-[8%] text-rich-black-700 mb-[8px]">
         SHARE MARKET
