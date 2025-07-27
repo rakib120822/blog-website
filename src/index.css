@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-rich-black-700:  rgb(1, 16, 28);
+  --color-rich-black-50: rgb(230,232,234);
+  --color-rich-black-300: rgb(85,99,111);
+  --font-Montserrat:Montserrat; 
+  
+}
