@@ -11,7 +11,7 @@ function Container() {
       <h2 className="font-Montserrat font-bold text-[1.875rem] leading-[120%] tracking-[-3%] text-rich-black-700 mb-[40px]">
         Feactured Posts
       </h2>
-      <div className="grid grid-cols-4  gap-[40px] mb-[64px]">
+      <div className="grid grid-cols-4  gap-[40px] mb-[64px] ">
         <Card cardImage={cardImage2} />
         <Card cardImage={cardImage3} />
         <Card cardImage={cardImage4} />

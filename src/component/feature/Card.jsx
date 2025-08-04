@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 
 function Card({ cardImage }) {
   return (
-    <div className="border border-rich-black-50 rounded-3xl   p-[12px]">
+    <div className="border border-rich-black-50 rounded-3xl   p-[12px] hover:shadow-lg hover:scale-105 cursor-pointer transition duration-200">
       <img src={cardImage} alt="photo" className="mb-[20px] w-full" />
       <h3 className="font-Montserrat font-light text-[0.75rem] leading-[120%] tracking-[8%] text-rich-black-700 mb-[8px]">
         SHARE MARKET
@@ -24,7 +24,7 @@ function Card({ cardImage }) {
         </p>
 
         <Link
-          to="#"
+          to="/showblog"
           className="font-Montserrat font-medium text-[1rem] leading-[120%] tracking-[1%] text-rich-black-700"
         >
           Read More <i class="fa-solid fa-arrow-right"></i>
