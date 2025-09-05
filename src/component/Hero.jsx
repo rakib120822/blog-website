@@ -1,7 +1,17 @@
 import React from "react";
 import heroImage from "../assets/hero.png";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/blogs");
+  };
+
+  const handleClickAbout = () => {
+    navigate("/about");
+  };
+
   return (
     <section className="w-full flex flex-col justify-center items-center relative ">
       <div className="absolute inset-0 w-[90%] mx-auto my-[100px]">
@@ -15,10 +25,16 @@ function Hero() {
           <br /> and students alike
         </p>
         <div className="flex gap-4">
-          <button className="bg-rich-black-700 text-rich-black-50 font-Montserrat font-semibold text-[1.25rem] leading-[120%] tracking-[-3%] px-8 py-4 rounded-4xl ">
+          <button
+            onClick={handleClick}
+            className="bg-rich-black-700 text-rich-black-50 font-Montserrat font-semibold text-[1.25rem] leading-[120%] tracking-[-3%] px-8 py-4 rounded-4xl "
+          >
             Explore Posts
           </button>
-          <button className="border-2 border-rich-black-700 font-Montserrat font-semibold text-[1.25rem] leading-[120%] tracking-[-1%] text-rich-black-700 px-8 py-4 rounded-4xl">
+          <button
+            onClick={handleClickAbout}
+            className="border-2 border-rich-black-700 font-Montserrat font-semibold text-[1.25rem] leading-[120%] tracking-[-1%] text-rich-black-700 px-8 py-4 rounded-4xl"
+          >
             About Me
           </button>
         </div>

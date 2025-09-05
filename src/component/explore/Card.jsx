@@ -1,6 +1,3 @@
-import React from "react";
-
-
 function Card({ cardImage, cardTitle }) {
   return (
     <div className="border border-rich-black-100 text-center px-6 py-4 rounded-2xl bg-white">

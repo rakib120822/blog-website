@@ -1,17 +1,17 @@
 import React from "react";
 import taxLogo from "../../assets/taxLogo.png";
-import contentImg from "../../assets/card3.png";
+
 import facebook from "../../assets/facebook.svg";
 import twitter from "../../assets/twitter.svg";
 import linkedin from "../../assets/linkedin.svg";
-import Container from "../feature/Container";
+
 import Card from "../feature/Card";
 import cardImage1 from "../../assets/card1.png";
 import cardImage2 from "../../assets/card2.png";
-import cardImage3 from "../../assets/card3.png";
+
 import cardImage4 from "../../assets/card4.png";
 
-function MainContent() {
+function MainContent({state}) {
   return (
     <div className="px-[30px]">
       <div className="mb-[2rem]">
@@ -25,13 +25,13 @@ function MainContent() {
         <div className="flex justify-between w-[90%]">
           <p className="font-Montserrat text-[0.875rem] leading-[120%] tracking-[3%] text-rich-black-300">
             <span className="pr-1">
-              <i class="fa-solid fa-calendar"></i>
+              <i className="fa-solid fa-calendar"></i>
             </span>
             July 18, 2025
           </p>
           <p className="font-Montserrat text-[0.875rem] leading-[120%] tracking-[3%] text-rich-black-300">
             <span className="pr-1">
-              <i class="fa-solid fa-folder"></i>{" "}
+              <i className="fa-solid fa-folder"></i>{" "}
             </span>
             Tax
           </p>
@@ -48,7 +48,7 @@ function MainContent() {
       </div>
 
       <div>
-        <img src={contentImg} alt="photo" className="w-full mb-[32px]" />
+        <img src={state.cardImage} alt="photo" className="w-full mb-[32px]" />
 
         <p className="font-Source-Serif text-[1.125rem] leading-[170%] tracking-[3%] text-rich-black-700 mb-4">
           As we approach the 2025 tax season, professionals, business owners,
@@ -132,9 +132,9 @@ function MainContent() {
         </h2>
 
         <div className="grid grid-cols-3 gap-[40px] mb-[90px]">
-          <Card cardImage={cardImage1} />
-          <Card cardImage={cardImage2} />
-          <Card cardImage={cardImage4} />
+          <Card cardImage={cardImage1}  index={0}/>
+          <Card cardImage={cardImage2} index={1}/>
+          <Card cardImage={cardImage4} index={2}/>
         </div>
       </div>
     </div>

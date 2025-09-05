@@ -10,6 +10,42 @@ import cardImage7 from "../../assets/growth.png";
 import cardImage8 from "../../assets/accounting.png";
 
 function Container() {
+
+  const blogs = [
+    {
+      img: cardImage1,
+      title: "Auditing",
+    },
+    {
+      img: cardImage2,
+      title: "Tax",
+    },
+    {
+      img: cardImage3,
+      title: "Baking Market",
+    },
+    {
+      img: cardImage4,
+      title: "Share Market",
+    },
+    {
+      img: cardImage5,
+      title: "Industry Analysis",
+    },
+    {
+      img: cardImage6,
+      title: "Finance",
+    },
+    {
+      img: cardImage7,
+      title: "Economics",
+    },
+    {
+      img: cardImage8,
+      title: "Accounting",
+    },
+  ];
+
   return (
     <div className="bg-rich-black-50  py-[64px]">
       <div className="w-[90%] mx-auto">
@@ -17,14 +53,9 @@ function Container() {
           Explore By Topics
         </h2>
         <div className="grid grid-cols-4 gap-[27px] ">
-          <Card cardImage={cardImage1} cardTitle={"Auditing"} />
-          <Card cardImage={cardImage2} cardTitle={"Tax"} />
-          <Card cardImage={cardImage3} cardTitle={"Baking Market"} />
-          <Card cardImage={cardImage4} cardTitle={"Share Market"} />
-          <Card cardImage={cardImage5} cardTitle={"Industry Analysis"} />
-          <Card cardImage={cardImage6} cardTitle={"Finance"} />
-          <Card cardImage={cardImage7} cardTitle={"Economics"} />
-          <Card cardImage={cardImage8} cardTitle={"Accounting"} />
+          {blogs.map((blog, index) => (
+            <Card key={index} cardImage={blog.img} cardTitle={blog.title} />
+          ))}
         </div>
       </div>
     </div>

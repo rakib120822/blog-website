@@ -16,10 +16,10 @@ function Card() {
         success.
       </p>
       <h3>
-        <i class="fa-solid fa-download"></i>Download PDF
+        <i className="fa-solid fa-download"></i>Download PDF
       </h3>
     </div>
-  );
+  ); 
 }
 
 export default Card;

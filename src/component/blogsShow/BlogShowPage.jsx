@@ -1,18 +1,21 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import MainContent from "./MainContent";
 
-function BlogPage() {
+import MainContent from "./MainContent";
+import LeftSideBar from "./LeftSideBar";
+import { useLocation } from "react-router";
+
+function BlogShowPage() {
+  const { state } = useLocation();
   return (
     <div className="grid grid-cols-4 p-[40px]">
       <div className="col-span-1">
-        <Sidebar />
+        <LeftSideBar />
       </div>
       <div className="col-span-3">
-        <MainContent />
+        <MainContent state={state} />
       </div>
     </div>
   );
 }
 
-export default BlogPage;
+export default BlogShowPage;
